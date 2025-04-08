@@ -20,7 +20,7 @@ axiosWithCredentials.interceptors.response.use(
   }
 );
 
-export const REMOTE_SERVER = import.meta.env.VITE_REMOTE_SERVER;
+export const REMOTE_SERVER = import.meta.env.VITE_REMOTE_SERVER||"https://nodeserver2-6ngz.onrender.com";
 export const USERS_API = `${REMOTE_SERVER}/api/users`;
 
 export const signin = async (credentials: any) => {
